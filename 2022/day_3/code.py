@@ -1,9 +1,8 @@
 import string
 from itertools import islice
 
-PRIORITIES = dict()
-for i, letter in enumerate(string.ascii_letters):
-    PRIORITIES[letter] = i+1
+
+PRIORITIES = {letter: value+1 for value, letter in enumerate(string.ascii_letters)}
 
 def challenge1():
     with open('./2022/day_3/input.txt') as f:
