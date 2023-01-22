@@ -12,9 +12,6 @@ def check_overlap_1(elf_1: list[str], elf_2: list[str]) -> bool:
     return False
 
 
-
-    
-
 def challenge1():
     with open('./2022/day_4/input.txt') as f:
         lines = f.read().splitlines()
@@ -50,6 +47,7 @@ def challenge2():
             overlaps += 1
 
     print(overlaps)
+
 
 if __name__ == '__main__':
     challenge1()
