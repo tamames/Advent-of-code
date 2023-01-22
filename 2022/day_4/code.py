@@ -4,9 +4,9 @@ def check_overlap_1(elf_1: list[str], elf_2: list[str]) -> bool:
     elf_1 = list(map(int, elf_1))
     elf_2 = list(map(int, elf_2))
 
-    if elf_1[0] <= elf_2[0] and elf_1[1] >= elf_2[1]:
+    if elf_1[0] <= elf_2[0] and elf_1[1] >= elf_2[1]: #if elf_2 is inside elf_1
         return True
-    if elf_1[0] >= elf_2[0] and elf_1[1] <= elf_2[1]:
+    if elf_1[0] >= elf_2[0] and elf_1[1] <= elf_2[1]: #if elf_1 is inside elf_2
         return True
     
     return False
